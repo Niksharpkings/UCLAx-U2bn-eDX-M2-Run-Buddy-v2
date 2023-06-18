@@ -152,11 +152,11 @@ UCLAx-U2bn-eDX-M2-Run-Buddy-v2
 
 ###### Home page - index.html ScreenShot:
 
-![index.html](image/README/uclax-u2-edx-m2-runbuddy-v2-index-html.png)
+![index.html](image\README\uclax-u2-m2-runbuddy-v2-index-html.png)
 
 ###### Privacy & Policy page - privacy-policy.html ScreenShot:
 
-![privacy=policy.html](image/README/uclax-u2-edx-m2-runbuddy-v2-privacy-policy-html.png)
+![privacy=policy.html](image\README\uclax-u2-edx-m2-runbuddy-v2-privacy-policy-html.png)
 
 ---
 
