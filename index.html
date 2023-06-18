@@ -1,24 +1,23 @@
 <!DOCTYPE html> <!-- Tells the browser to interpret as a HTML document -->
-<html lang="en"> <!-- Represents the root of an HTML document and tells the browser that the language of the document is English -->
+<html lang="en">
+<!-- Represents the root of an HTML document and tells the browser that the language of the document is English -->
 
-<head> <!-- Start of the head element tag. Contains information about the document for the browser, but not the content -->
-  <meta charset="UTF-8" /> <!-- Tells the browser to use the UTF-8 character set. charset' meta element should be the first thing in '<head>'. UTF-8 accommodates just about any character, from foreign language symbols to emojis.-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Tells the browser to use the device's width as the width of the page, and to scale the page to fit the device's width -->
+<head>
+  <!-- Start of the head element tag. Contains information about the document for the browser, but not the content -->
+  <meta charset="UTF-8" />
+  <!-- Tells the browser to use the UTF-8 character set. charset' meta element should be the first thing in '<head>'. UTF-8 accommodates just about any character, from foreign language symbols to emojis.-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tells the browser to use the device's width as the width of the page, and to scale the page to fit the device's width -->
   <META http-equiv="X-UA-Compatible" content="IE=Edge"> <!-- content security policy is for privacy and security -->
   <title>Run Buddy v2</title> <!-- The title of the document, which is displayed in the browser's tab -->
-  <link
-  title="stylesheet"
-  integrity="text"
-  media="only screen and (color)"
-  rel="stylesheet"
-  type="text/css"
-  href="./assets/css/style.css" />
+  <link title="stylesheet" integrity="text" media="only screen and (color)" rel="stylesheet" type="text/css"
+    href="./assets/css/style.css" />
 </head> <!-- Ending of the head element tag -->
 
 <body> <!-- Contains and/or displays the content of the document -->
   <header> <!-- header Opening-->
     <h1>
-    <a href="/">RUN BUDDY v2</a> <!-- "level 1" heading element-->
+      <a href="/">RUN BUDDY v2</a> <!-- "level 1" heading element-->
     </h1>
     <nav> <!-- Navigation element -->
       <ul><!-- Unordered list element -->
@@ -35,42 +34,43 @@
           <a href="./index.html#reach-out">Reach Out</a>
         </li>
         <li>
-          <a title="Privacy Policy"
-          type="text/html"
-          hreflang="en"
-          href="./privacy-policy.html"
-          target="_blank"
-          rel="noopener canonical noreferrer help">Privacy Policy</a> <!-- Privacy Policy -->
+          <a title="Privacy Policy" type="text/html" hreflang="en" href="./privacy-policy.html" target="_blank"
+            rel="noopener canonical noreferrer help">Privacy Policy</a> <!-- Privacy Policy -->
         </li>
         <li>
-          <a title="Main Home"
-          type="text/html"
-          hreflang="en"
-          href="https://niksharpkings.github.io/"
-          target="_blank"
-          rel="noopener canonical noreferrer help">Main Home</a> <!-- Privacy Policy -->
+          <a title="Main Home" type="text/html" hreflang="en" href="https://niksharpkings.github.io/" target="_blank"
+            rel="noopener canonical noreferrer help">Main Home</a> <!-- Privacy Policy -->
         </li>
       </ul> <!-- Closing unordered list element -->
     </nav> <!-- Closing navigation element -->
   </header> <!-- Closing header element -->
 
   <section class="hero"> <!-- hero/jumbotron Section-->
+
     <div class="hero-cta">
       <h2>Start Building Habits.</h2>
       <p>
-        seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
+        seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
+        messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
+        Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche
+        tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you
+        probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
       </p>
     </div>
+
     <div class="hero-form"> <!-- content division element -->
       <h3>Get Started Today!</h3> <!-- "level 3" heading element-->
       <p>Fill out this form and one of our trainers will schedule a consult.</p> <!-- Paragraph element -->
       <form> <!-- Form element -->
         <label for="name">Enter full name:</label> <!-- Label element:  name -->
-        <input type="text" placeholder="Your Name" name="name" id="name" class="form-input"> <!-- text Input element:  name -->
+        <input type="text" placeholder="Your Name" name="name" id="name" class="form-input">
+        <!-- text Input element:  name -->
         <label for="email">Enter email address:</label> <!-- Label element:  email -->
-        <input type="text" placeholder="Email Address" name="email" id="email" class="form-input"> <!-- text Input element:  email -->
+        <input type="text" placeholder="Email Address" name="email" id="email" class="form-input">
+        <!-- text Input element:  email -->
         <label for="phone">Enter a telephone number:</label> <!-- Label element:  phone -->
-        <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input"> <!-- text Input element:  phone -->
+        <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input">
+        <!-- text Input element:  phone -->
         <p> <!-- Paragraph element -->
           Have you worked out with a trainer before?
           <input type="radio" name="trainer-confirm" id="trainer-yes" /> <!-- Radio button element -->
@@ -78,113 +78,147 @@
           <input type="radio" name="trainer-confirm" id="trainer-no" /> <!-- Radio button element -->
           <label for="trainer-no">No</label> <!-- Label element -->
         </p> <!-- Closing paragraph element -->
-        <p>  <!-- Paragraph element -->
-          <label for="checkbox">I acknowledge that I am at least 18 years of age.</label><!-- Label element -->
-          <input type="checkbox" name="age-confirm" id="checkbox" /> <!-- Checkbox input box-->
+        <p> <!-- Paragraph element -->
+          <span class="checkbox-wrapper">
+            <input type="checkbox" name="checkpoint1" id="checkbox" />
+            <label for="checkbox">I acknowledge that I am at least 18 years of age.</label>
+          </span>
         </p>
         <button type="submit">Get running!</button><!-- submit button-->
       </form>
     </div>
   </section>
 
-  <section id="what-we-do" class="intro"><!-- "what we do" section -->
-    <h2 class="section-title primary-border">What We Do</h2> <!-- "level 2" heading element-->
-    <p>
-      lorem random text -> butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
-    </p>
-  </section>
-
-  <section id="what-you-do" class="steps"> <!-- "what you do" section -->
-    <h2 class="section-title secondary-border">What You Do</h2> <!-- "level 2" heading element-->
-    <div>
-      <img src="./assets/images/step-1.svg" alt="What you do step 1" /> <!-- SVG Image element -->
-      <h3>Step 1: <span>Fill Out the Form Above.</span></h3> <!-- "level 3" heading element-->
-      <p>You're already here, so why not?</p> <!-- Paragraph element -->
+  <!-- "what we do" start - <section> -->
+  <section id="what-we-do" class="intro">
+    <div class="flex-row">
+      <h2 class="section-title primary-border">
+        What We Do
+      </h2>
     </div>
-
-    <div>
-      <img src="./assets/images/step-2.svg" alt="what you do step 2" />
-      <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
-      <p>Are you here to build muscle, lose weight, or just feel good?</p>
-    </div>
-
-    <div>
-      <img src="./assets/images/step-3.svg" alt="what you do step 3" />
-      <h3>Step 3: <span>Get Running.</span></h3>
-      <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
-    </div>
-
-    <div>
-      <img src="./assets/images/step-4.svg" alt="what you do step 4" />
-      <h3>Step 4: <span>See Results.</span></h3>
-      <p>Bi-weekly checkins with your trainer will keep you focused</p>
+    <div class="flex-row">
+      <p>
+        butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade
+        Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future
+        Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa
+        Schlitz sustainable Intelligentsia umami deep v craft
+      </p>
     </div>
   </section>
+  <!-- end "what we do" -->
 
-  <section id="your-trainers" class="trainers"> <!-- "meet the trainers" section -->
-    <h2 class="section-title primary-border">Meet The Trainers</h2> <!-- "level 2" heading element-->
-
-    <article class="trainer"> <!-- Trainer #1 article -->
-      <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron" /> <!-- image of trainer 1-->
-      <div class="trainer-bio text-left"> <!-- div tag in artical for trainer # 1-, align left -->
-        <h3>Arron Stephens</h3> <!-- "level 3" heading element-->
-        <h4>Speed / Strength</h4> <!-- "level 4" heading element-->
-        <p>
-          Lorem random text -> ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
-          itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
-        </p> <!-- lorem Paragraph element -->
-      </div> <!-- closing div tag -->
-    </article> <!-- closing article tag for trainer # 1-->
-
-    <article class="trainer"> <!-- Trainer #2 articale-->
-      <div class="trainer-bio text-right"> <!-- div tag in artical for trainer # 2-, align right -->
-        <h3>Joanna Gill</h3> <!-- "level 3" heading element -->
-        <h4>Endurance</h4> <!-- "level 4" heading element-->
-        <p>
-          Lorem random text -> ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
-          itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
-        </p> <!-- lorem Paragraph element -->
-      </div> <!-- closing div tag -->
-      <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" /> <!-- image of trainer 2-->
-    </article> <!-- closing article tag for trainer # 2-->
-
-    <!-- third trainer bio -->
-    <article class="trainer"> <!-- Trainer #3 article -->
-      <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" /> <!-- image of trainer 3-->
-      <div class="trainer-bio text-left"> <!-- div tag in artical for trainer # 3-, align left -->
-        <h3>Harry "the Headband" Smith</h3> <!-- "level 3" heading element -->
-        <h4>Strength</h4> <!-- "level 4" heading element-->
-        <p>
-          Loremrandom text -> ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
-          itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
-        </p> <!-- lorem Paragraph element -->
-      </div> <!-- closing div tag -->
-    </article> <!-- closing article tag for trainer # 3-->
-
-  </section>
-
-  <section id="reach-out" class="contact"> <!-- "reach out" section -->
-    <h2 class="section-title secondary-border">Reach Out</h2> <!-- "level 2" heading element-->
-    <div class="contact-info">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3147.1079747227936!2d-120.42364418397035!3d37.92790791110593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8090c49129b6ac57%3A0xb56c7eb95a2cd8bd!2sMain%20St%2C%20California%2095327!5e0!3m2!1sen!2sus!4v1616426329495!5m2!1sen!2sus" 
-      width="600" 
-      height="450" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy">
-      </iframe>
-      <div class="contact-form">
-        <h3>Contact Us</h3>
-        <form>
-           <label for="contact-name">Your Name</label>
-           <input type="text" id="contact-name" placeholder="Your Name" />
-      
-           <label for="contact-message">Message</label>
-           <textarea id="contact-message" placeholder="Message"></textarea>
-      
-           <button type="submit">Submit</button>
-          </form>
+  <!-- "what you do" start -->
+  <section id="what-you-do" class="steps">
+    <div class="flex-row">
+      <h2 class="section-title secondary-border">
+        What You Do
+      </h2>
+    </div>
+    <div class="step">
+      <h3>Step 1.</h3>
+      <div class="step-info">
+        <div class="step-img">
+          <img src="./assets/images/step-1.svg" alt="" />
+        </div>
+        <div class="step-text">
+          <h4>Fill Out The Form Above</h4>
+          <p>You're already here, so why not?</p>
+        </div>
       </div>
+    </div>
+    <div class="step">
+      <h3>Step 2.</h3>
+      <div class="step-info">
+        <div class="step-img">
+          <img src="./assets/images/step-2.svg" alt="" />
+        </div>
+        <div class="step-text">
+          <h4>Consult With One Of Our Trainers</h4>
+          <p>Are you here to build muscle, lose weight, or just feel good?</p>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <h3>Step 3.</h3>
+      <div class="step-info">
+        <div class="step-img">
+          <img src="./assets/images/step-3.svg" alt="" />
+        </div>
+        <div class="step-text">
+          <h4>Get Running</h4>
+          <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <h3>Step 4.</h3>
+      <div class="step-info">
+        <div class="step-img">
+          <img src="./assets/images/step-4.svg" alt="" />
+        </div>
+        <div class="step-text">
+          <h4>See Results</h4>
+          <p>Bi-weekly checkins with your trainer will keep you focused</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- "what you do" end -->
+
+  <!-- "meet the trainers" start -->
+  <section id="your-trainers">
+    <div class="flex-row">
+      <h2 class="section-title primary-border">
+        Meet The Trainers
+      </h2>
+    </div>
+
+    <div class="trainers">
+      <article class="trainer">
+        <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron" />
+        <div class="trainer-bio">
+          <h3 class="trainer-name">Arron Stephens</h3>
+          <h4 class="trainer-role">Speed / Strength</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe
+            culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis
+            repellat!</p>
+        </div>
+      </article>
+
+      <article class="trainer">
+        <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a work out" />
+        <div class="trainer-bio">
+          <h3 class="trainer-name">Joanna Gill</h3>
+          <h4 class="trainer-role">Endurance</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe
+            culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis
+            repellat!</p>
+        </div>
+      </article>
+
+      <article class="trainer">
+        <img src="./assets/images/trainer-3.jpg"
+          alt="Harry Smith wearing a headband and lifting comically small pink weights" />
+        <div class="trainer-bio">
+          <h3 class="trainer-name">Harry "The Headband" Smith</h3>
+          <h4 class="trainer-role">Strength</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe
+            culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis
+            repellat!</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- "meet the trainers" end -->
+
+  <section id="reach-out" class="contact">
+    <div class="flex-row">
+      <h2 class="section-title secondary-border">
+        Reach Out
+      </h2>
+    </div>
+
+    <div class="contact-info">
       <div>
         <h3>Run Buddy</h3>
         <p>
@@ -192,30 +226,48 @@
           <br />
           Let us know and we'll be happy to talk to you!
         </p>
+
         <address>
-          55 Main Street <br/>
-          Some Town, Ca <br/>
+          55 Main Street <br />
+          Some Town, Ca <br />
           12345<br />
-          P: 555.RUN.BUDZ (555.786.2839)<br/>
+          P: 555.RUN.BUDZ (555.786.2839)<br />
           E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
         </address>
+
       </div>
+
+      <div class="contact-form">
+        <h3>Contact Us</h3>
+        <form>
+          <label for="contact-name">Your Name</label>
+          <input type="text" id="contact-name" placeholder="Your Name" />
+
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" placeholder="Message"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3147.1079747227936!2d-120.42364418397035!3d37.92790791110593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8090c49129b6ac57%3A0xb56c7eb95a2cd8bd!2sMain%20St%2C%20California%2095327!5e0!3m2!1sen!2sus!4v1616426329495!5m2!1sen!2sus"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
     </div>
   </section>
+  <!-- "reach out" end -->
 
-  <footer> <!-- footer -->
-    <h2>❤️ Made with love by Run Buddy.</h2> <!-- "level 2" heading element-->
+  <!-- footer -->
+  <footer>
+    <h2>❤️ Made with love by Run Buddy v2.</h2>
     <div>
-      <a title="Privacy Policy"
-      type=text/html
-      hreflang=en
-      href="./privacy-policy.html"
-      target="_blank"
-      rel="noopener canonical noreferrer help">Read Our Privacy Policy</a> <!-- Anchor element -->
+      <a title="Privacy Policy" type=text/html hreflang=en href="./privacy-policy.html" target="_blank"
+        rel="noopener canonical noreferrer help">Read Our Privacy Policy</a> <!-- Anchor element -->
       <br> <!-- line break -->
-      &copy; 2023 Run Buddy, Inc.
+      &copy; 2019 Run Buddy, Inc.
     </div>
-  </footer> <!-- Closing footer element -->
+  </footer>
+  <!-- footer end -->
 </body>
 
 </html>

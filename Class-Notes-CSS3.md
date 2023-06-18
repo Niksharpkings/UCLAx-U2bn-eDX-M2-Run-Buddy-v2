@@ -186,8 +186,6 @@ To change a flexbox from a row to a column layout, you can use the `flex-directi
 
 But wait—did you notice that the navigation items seem to be skewed to the left, closer to the `<h1>`? You can adjust that with a property called `justify-content`, as you'll soon learn.
 
-
-
 ## Justify the Header Elements
 
 The `justify-content` property applies to elements with a `display` property value of `flex`. It allows you to control spacing between child elements by using the following values:
@@ -203,7 +201,6 @@ The `justify-content` property applies to elements with a `display` property val
 * The `space-around` value is similar to `space-between`, but it also adds space between the elements and the edges of the container, so that the left-most and right-most elements are not flush against those edges, as shown in the following image:
   ![Numbered boxes within a container appear centered and evenly spaced, with room between the outer boxes and the container edges.](https://courses.bootcampspot.com/courses/927/files/1159982/preview)
 
-
 ## The Main Axis and Cross Axis
 
 The `align-items` property works like `justify-content`, but on the opposite axis. You see, flexbox operates on a  **main axis** —the direction that you can control when laying out the flexbox child elements—and a  **cross axis** . The main axis is determined by a property called `flex-direction`. The default value of `flex-direction` is set to `row`, making the horizontal or x-axis the main axis, and the vertical or y-axis the cross axis.
@@ -215,3 +212,27 @@ In this case, we're keeping the value of `flex-direction` as `row`, and we're ve
 ![An animation demonstrates how various values for align-items results in boxes of different shapes and positions.](https://courses.bootcampspot.com/courses/927/files/1159996/preview)
 
 The other property we added, `list-style`, sets how a list item is styled (bullet points, dashes, etc.) and positioned (indented or outdented). We gave it a value of `none` to hide the bullet points, because we're changing some of the styles for the `<header>`. These changes might make the bullet points visible, which we don't want.
+
+##### The default `flex-direction` value for a flexbox is `row`, so we don't need to explicitly declare it.
+
+how much margin does each side get, based on the declaration `margin: 0 auto 35px auto`?
+
+This declaration results in 0px for the top margin and 35px for the bottom; the left and right margins will be set automatically based on the container.
+
+
+
+* `flex-grow` is a numeric value that helps determine how much of the flexbox's unused space can be distributed among its children. This number is used as a ratio, alongside the other child's `flex-grow` value. The higher the number, the more unused space that child element will be given.
+* `flex-shrink` helps determine how to size the flexbox's children when the flexbox container shrinks. Although this property can be handy, it isn't used as often as `flex-grow`.
+* `flex-basis` works similarly to setting a `width` value for a child element, but it acts as more of a baseline value that at the very least will let the child be that size no matter what—and grow or shrink accordingly.
+
+Using `flex`—instead of listing `flex-grow`, `flex-shrink`, and `flex-basis` separately—saves space in the style sheet.
+
+The `flex` property can read values in a few different ways based on the type of value entered, as shown in the following code:
+
+```text
+flex: <flex-grow value> <flex-shrink value> <flex-basis value>;
+
+flex: <flex-grow value> <flex-basis value>;
+
+flex: <flex-grow value> <flex-shrink value>;
+```

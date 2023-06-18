@@ -69,6 +69,8 @@ Full-Stack Web Development Coding Boot Camp 2021-2022
 
 ##### Version:
 
+`v2.0.2 - | Section 2.2 thru 2.5 Complete | Updated/Changed Class-Notes, CSS flexbox improvements, CSS Global Componites, Revamped the CSS to be mobile responsive|`
+
 `v2.0.1 - | Section 2.1 Complete | Updated Class-Notes |`
 
 `v2.0.0 - | Repo Created | Added Files: index.html, README.md, LICENSE, .gitignore and all Files from Run Buddy V1 |`

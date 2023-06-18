@@ -1,318 +1,702 @@
+:root {
+/*Miscellaneous*/
+  --primary-color: #fce138;
+  --secondary-color: #024e76;
+  --tertiary-color: #39a6b2;
+} /* root delcaration is used to declare global variables */
+
 * {
-  /* selects all elements in the document */
-  margin: 0px; /* margin spacing */
-  padding: 0px; /* padding: 0; means that there is no space between the content and the border. */
-  box-sizing: border-box; /* box-sizing: border-box; means that the width and height you set for an element includes any padding and border, but not the margin. */
-}
+/*Box model stuff*/
+  margin: 0px; /* sets all margins to 0 */
+  padding: 0px; /* sets all padding to 0 */
+/*Miscellaneous*/
+  box-sizing: border-box; /* sets box-sizing to border-box */
+} /* is a universal selector that selects all elements */
 
 body {
-  /* selects all elements in the body tags */
-  color: #39a6b2; /* text color */
-  font-family: Helvetica, Arial, sans-serif; /* font look or style family */
-}
+/*Typography stuff*/
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--tertiary-color);
+} /* selects the body element */
+
+
+/* HEADER / NAV BAR STYLES START */
 
 header {
-  /* selects all elements in the header tags */
-  display: flex; /* flexbox for display */
-  justify-content: space-between; /* justify-content space between value distributes all empty space between child elements to keep them evenly spaced apart */
-  flex-wrap: wrap; /* flex-wrap property specifies whether the flexible items should wrap or not. By default, the value of flex-wrap is set to none.*/
-  padding: 20px 35px; /* padding top and bottom, left and right*/
-  background-color: #39a6b2; /* background color */
+/*Display stuff*/
+  display: flex; /* sets display to flex */
+  flex-wrap: wrap; /* sets flex-wrap to wrap */
+  justify-content: space-between; /* sets justify-content to space-between */
+/*Positioning stuff*/
+  position: sticky; /* sets position to sticky */
+  position: -webkit-sticky; /* sets position to -webkit-sticky */
+  top: 0; /* sets top to 0 */
+  z-index: 9999; /* sets z-index to 9999 to be on top most layer*/
+/*Box model stuff*/
+  padding: 20px 35px; /* sets padding to 20px 35px */
+  background-image: url("../images/hero-bg.jpg"); /* sets background-image to hero-bg.jpg */
+  background-size: cover; /* sets background-size to cover and specifies the size of the background images.*/
+  background-attachment: fixed; /* sets background-attachment to fixed and Specifies whether the background images are fixed with regard to the viewport ('fixed') or scroll along with the element ('scroll') or its contents ('local'). */
+  background-position: 80%; /* sets background-position to 80% and specifies the initial position of the background image(s) (after any resizing) within their corresponding background positioning area. */
+  background-color: var(--tertiary-color); /* sets background-color to var(--tertiary-color) from the root global element */
 }
 
 header h1 {
-  /* selects all h1 elements in the header tag */
-  font-weight: bold; /* font weight thickness */
-  font-size: 36px; /* font size height and width*/
-  color: #fce138;
-  margin: 0; /* margin spacing */
-  /* display: inline; display inline means it will be displayed in the same line */
+/*Box model stuff*/
+  margin: 0px; /* sets margin to 0 */
+/*Typography stuff*/
+  font-size: 36px; /* sets font-size to 36px */
+  font-weight: bold; /* sets font-weight to bold */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  color: var(--primary-color); /* sets color to var(--primary-color) from the root global element */
 }
 
 header a {
-  /*select all anchor tags in the header */
-  text-decoration: none; /* removes underline from anchor tags */
-  color: #fce138;
+/*Typography stuff*/
+  text-decoration: none; /* text-decoration is set to none.  text-decorations is applied to font used for an element's text.*/
+  color: var(--primary-color); /* sets color to var(--primary-color) from the root global element */
 }
 
 header nav {
-  /* selects all elements in the nav tags */
-  /* float: right; float right mean it will be moved to the right side of the nav container */
-  margin: 7px 0px; /* margin spacing 7px to the top and bottom and 0 for the right and left*/
+/*Box model stuff*/
+  margin: 7px 0px; /* sets margin to 7px 0px */
 }
 
 header nav ul {
-  display: flex; /* flexbox for display */
-  flex-wrap: wrap; /* flex-wrap property specifies whether the flexible items should wrap or not. By default, the value of flex-wrap is set to none. */
-  justify-content: space-between; /* justify-content space between value distributes all empty space between child elements to keep them evenly spaced apart */
-  align-items: center; /* align-items aligns items vertically */
-  list-style: none; /* list-style none removes the list style */
+/*Display stuff*/
+  display: flex; /* sets display to flex */
+  flex-wrap: wrap; /* sets flex-wrap to wrap. It controls whether the flex container is single-line or multi-line, and the direction of the cross-axis, which determines the direction new lines are stacked in.*/
+  align-items: center; /* sets align-items to center. It defines the default behaviour for how flex items are laid out along the cross axis on the current line. */
+  justify-content: space-between; /* sets justify-content to space-between. It defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size.*/
+/*Miscellaneous*/
+  list-style: none;  /* sets list-style to none. It is a shorthand property for setting list-style-type, list-style-image and list-style-position. */
 }
 
 header nav ul li a {
-  /* selects all anchor tags in the li tags */
-  margin: 0px 30px; /* margin spacing 0px to the top and bottom and 30px for the right and left*/
-  font-weight: lighter; /* font weight thickness */
-  font-size: 1.55vw; /* font size height and width The value we provided (1.55vw) is using a unit of measurement called vw, which stands for viewport width.*/
+/*Box model stuff*/
+  padding: 10px 15px; /* sets padding to 10px 15px */
+/*Typography stuff*/
+  font-size: 1.55vw; /* sets font-size to 1.55vw */
+  font-weight: lighter; /* sets font-weight to lighter */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+header nav ul li a:hover {
+/*Box model stuff*/
+  border-radius: 15px; /* sets border-radius to 15px */
+  background: var(--primary-color);
+/*Typography stuff*/
+  text-shadow: none; /* sets text-shadow to none */
+  color: var(--secondary-color);
+}
+
+/* HEADER / NAVBAR STYLES END */
+
+
+
+/* FOOTER STYLES START */
 footer {
-  /* selects all elements in the footer tags */
-  background: #fce138; /* background color */
-  width: 100%; /* width of the footer */
-  padding: 40px 35px; /* padding top and bottom, left and right*/
+/*Display stuff*/
+  display: flex; /* sets display to flex */
+  flex-wrap: wrap; /* sets flex-wrap to wrap */
+  justify-content: space-between; /* sets justify-content to space-between */
+/*Box model stuff*/
+  width: 100%; /* sets width to 100% */
+  padding: 40px 35px; /* sets padding to 40px 35px */
+  background: var(--primary-color);
 }
 
 footer h2 {
-  /* selects all h2 elements in the footer tag */
-  display: inline; /* display inline means it will be displayed in the same line */
-  color: #024e76; /* text color */
-  font-size: 30px; /* font size height and width*/
-  margin: 0px; /* margin spacing */
+/*Box model stuff*/
+  margin: 0px; /* sets margin to 0px */
+/*Typography stuff*/
+  font-size: 30px; /* sets font-size to 30px */
+  color: var(--secondary-color);
 }
 
 footer div {
-  /* selects all elements in the div tags */
-  float: right; /* float right mean it will be moved to the right side of the footer container */
-  line-height: 1.5; /* line height */
-  text-align: right; /* text alignment */
+/*Typography stuff*/
+  text-align: right; /* sets text-align to right */
+/*Miscellaneous*/
+  line-height: 1.5; /* sets line-height to 1.5 */
 }
 
 footer a {
-  /*select all anchor tags in the footer */
-  color: #024e76; /* text color */
+/*Typography stuff*/
+  color: var(--secondary-color);
 }
+/* END FOOTER STYLES */
 
+/* STYLE ALL SECTION TAGS */
 section {
-  /* selects all elements in the section tags */
-  padding: 60px; /* padding all around*/
+/*Box model stuff*/
+  padding: 60px;  /* sets padding to 60px */
 }
 
+/* HERO STYLES START */
 .hero {
-  /* selects all elements in the hero class*/
-  background-image: url("../images/hero-bg.jpg"); /* hero background image */
-  height: 600px; /* height of the hero */
-  background-size: cover; /* background size */
-  background-position: center; /* background initial position */
-  position: relative; /* position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky). */
+/*Display stuff*/
+  display: flex; /* sets display to flex */
+  flex-wrap: wrap;  /* sets flex-wrap to wrap */
+  align-items: flex-start; /* sets align-items to flex-start */
+  justify-content: center; /* sets justify-content to center */
+  /*Box model stuff*/
+  background-image: url('../images/hero-bg.jpg'); /* sets background-image to hero-bg.jpg */
+  background-attachment: fixed; /* sets background-attachment to fixed */
+  background-position: 80%; /* sets background-position to 80% */
+  background-size: cover; /* sets background-size to cover */
+}
+
+.hero-cta {
+/*Box model stuff*/
+  width: 35%;
+  margin: 3.5%;
+/*Typography stuff*/
+  font-size: 18px;
+  text-align: right;
+  color: #fff;
+/*Miscellaneous*/
+  line-height: 1.2;
+}
+
+.hero-cta h2 {
+/*Typography stuff*/
+  font-size: 55px;
+  font-style: italic;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: var(--primary-color);
 }
 
 .hero-form {
-  /* selects all elements in the hero-form class */
-  border: solid 3px #024e76; /* border property is a shorthand property for setting the individual border properties in a single declaration. */
-  background-color: #fce138; /* background-color property sets the background color to the element selected */
-  padding: 20px; /* padding all around inner margin within the border.*/
-  width: 500px; /* width of the hero form */
-  color: #024e76; /* text color */
-  position: absolute; /* position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky). */
-  bottom: 120px; /* bottom property specifies the bottom position of a positioned element. */
-  right: 140px; /* right property specifies the right position of a positioned element. */
+/*Box model stuff*/
+  width: 40%;
+  margin: 3.5%;
+  padding: 20px;
+  border: 3px solid var(--secondary-color);
+  border-radius: 15px;
+  background-color: rgba(255, 225, 56, 0.8);
+/*Typography stuff*/
+  color: var(--secondary-color);
+/*Miscellaneous*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-form button:hover {
+/*Box model stuff*/
+  background-color: var(--tertiary-color);  
 }
 
 .hero-form h3 {
-  /* selects all h3 elements in the hero-form tag */
-  font-size: 24px; /* font size height and width*/
-  margin: 0; /* margin spacing */
+/*Box model stuff*/
+  margin: 0px;
+/*Typography stuff*/
+  font-size: 24px;
 }
-
 .hero-form p {
-  /* selects all elements in the p tags */
-  margin: 5px 0px 15px 0px; /* margin spacing 5px to the top and bottom and 0 for the right and left*/
+/*Box model stuff*/
+  margin: 5px 0 15px 0;
 }
 
 .form-input {
-  /* selects all elements in the form-input class */
-  border: 1px solid #024e76; /* border property is a shorthand property for setting the individual border properties in a single declaration. */
-  display: block; /* display block means it will be displayed in the same line */
-  padding: 7px 15px; /* padding top and bottom, left and right*/
-  font-size: 16px; /* font size height and width*/
-  color: #024e76; /* text color */
-  width: 100%; /* width of the form input */
-  margin-bottom: 15px; /* margin spacing */
+/*Display stuff*/
+  display: block;
+/*Box model stuff*/
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 7px 15px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
+/*Typography stuff*/
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+.form-input:focus {
+/*Box model stuff*/
+  outline: none;
+  background-color: rgba(255,255,255, 1);
 }
 
 .hero-form label {
-  /* selects all elements in the label tags */
-  margin: 0px 5px; /* margin spacing 0px to the top and bottom and 5px for the right and left*/
+/*Box model stuff*/
+  margin: 0px 5px;
 }
 
 .hero-form button {
-  /* selects all elements in the button tags */
-  color: #fce138; /* text color */
-  background-color: #024e76; /* background color */
-  border: none; /* border property is a shorthand property for setting the individual border properties in a single declaration. */
-  padding: 10px 20px; /* padding top and bottom, left and right*/
-  font-size: 16px; /* font size height and width*/
+/*Box model stuff*/
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+/*Typography stuff*/
+  font-size: 16px;
+  color: var(--primary-color);
 }
 
-.intro {
-  /* selects all elements in the intro class */
-  text-align: center; /* text alignment */
+.checkbox-wrapper input, .radio-wrapper input {
+/*Manipulations stuff*/
+  opacity: 0;
 }
 
-.intro p {
-  /* selects all elements in the p tags */
-  line-height: 1.7; /* line height */
-  color: #39a6b2; /* text color */
-  width: 80%; /* width of the intro paragraph */
-  font-size: 20px; /* font size height and width*/
-  margin: 0px auto; /* margin spacing */
+.checkbox-wrapper label, .radio-wrapper label {
+/*Positioning stuff*/
+  position: relative;
+  left: 10px;
+/*Box model stuff*/
+  margin: 10px;
+/*Miscellaneous*/
+  line-height: 1.6;
 }
 
-.steps {
-  /* selects all elements in the steps class */
-  text-align: center; /* text alignment */
-  background: #fce138; /* background color */
+.checkbox-wrapper label::before, .radio-wrapper label::before {
+/*Display stuff*/
+  content: "";
+/*Positioning stuff*/
+  position: absolute;
+  left: -30px;
+  top: -4px;
+/*Box model stuff*/
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--secondary-color);
+  background: rgba(255, 255, 255, 0.75);
 }
 
-.steps div {
-  /* selects all elements in the div tags */
-  margin-bottom: 80px; /* margin spacing */
+.radio-wrapper label::before {
+/*Box model stuff*/
+  border-radius: 50%;
 }
 
-.steps img {
-  /* selects all elements in the img tags */
-  width: 15%; /* width of the steps image */
-  margin: 10px 0px; /* margin spacing 10px to the top and bottom and 0 for the right and left*/
+.radio-wrapper label::after {
+/*Display stuff*/
+  content: "";
+/*Positioning stuff*/
+  position: absolute;
+  left: -29px;
+  top: -3px;
+/*Box model stuff*/
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
 }
 
-.steps h3 {
-  /* selects all elements in the h3 tags */
-  color: #024e76; /* text color */
-  font-size: 46px; /* font size height and width*/
-  margin-top: 10px; /* margin spacing */
+.checkbox-wrapper label::after {
+/*Display stuff*/
+  content: "";
+/*Positioning stuff*/
+  position: absolute;
+  left: -26px;
+  top: 1px;
+/*Box model stuff*/
+  width: 14px;
+  height: 6px;
+  border-bottom: 2px solid var(--secondary-color);
+  border-left: 2px solid var(--secondary-color);
+/*Manipulations stuff*/
+  transform: rotate(-58deg);
 }
 
-.steps p {
-  /* selects all elements in the p tags */
-  color: #39a6b2; /* text color */
-  font-size: 23px; /* font size height and width*/
+.checkbox-wrapper input + label::after,
+.radio-wrapper input + label::after {
+/*Display stuff*/
+  content: none;
 }
 
-.steps span {
-  /* selects all elements in the span tags */
-  font-size: 38px; /* font size height and width*/
+.checkbox-wrapper input:checked + label::after,
+.radio-wrapper input:checked + label::after {
+/*Display stuff*/
+  content: "";
 }
+/* HERO STYLES END */
 
+
+/* SECTION TITLE STYLES START */
 .section-title {
-  /* selects all elements in the section-title class */
-  font-size: 55px; /* font size height and width*/
-  color: #024e76; /* text color */
-  margin-bottom: 35px; /* margin bottom spacing */
-  padding: 0px 100px 20px 100px; /* padding top and bottom, left and right*/
-  display: inline-block; /* display inline-block  */
-  border-bottom: 3px solid; /* border bottom property  */
+  font-size: 48px;
+  border-bottom: 3px solid;
+  color: var(--secondary-color);
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0px auto 35px auto;
+  width: 50%;
 }
 
 .primary-border {
-  /* selects all elements in the primary-border class */
-  border-color: #fce138; /* border color */
+/*Box model stuff*/
+  border-color: var(--primary-color);
 }
 
 .secondary-border {
-  /* selects all elements in the secondary-border class */
-  border-color: #39a6b2; /* border color */
+/*Box model stuff*/
+  border-color: var(--tertiary-color);
+}
+/* SECTION TITLE STYLES END */
+
+/* WHAT WE DO STYLES */
+.intro p {
+/*Box model stuff*/
+  width: 80%;
+  margin: 0px auto;
+/*Typography stuff*/
+  font-size: 20px;
+  text-align: center;
+  color: var(--tertiary-color);
+/*Miscellaneous*/
+  line-height: 1.7;
+}
+/* WHAT YOU DO STYLES END */
+
+
+/* WHAT YOU DO STYLES START */
+.steps {
+/*Box model stuff*/
+  background: var(--primary-color);
 }
 
+.step {
+/*Display stuff*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+/*Box model stuff*/
+  width: 80%;
+  margin: 50px auto;
+  padding-bottom: 50px;
+}
+
+.step:last-child {
+/*Box model stuff*/
+  border-bottom: none;
+}
+
+.step h3 {
+/*Display stuff*/
+  flex: 1 30%;
+/*Typography stuff*/
+  font-size: 46px;
+  color: var(--secondary-color);
+}
+
+.step-info {
+/*Display stuff*/
+  display: flex;
+  flex: 2 70%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.step-img {
+/*Display stuff*/
+  flex: 1 12%;
+/*Box model stuff*/
+  margin-right: 20px;
+}
+
+.step-img img {
+/*Box model stuff*/
+  max-width: 100%;
+}
+
+.step-text {
+/*Display stuff*/
+  flex: 12;
+}
+
+.step-text p {
+/*Typography stuff*/
+  font-size: 18px;
+  color: var(--tertiary-color);
+}
+
+.step-text h4 {
+/*Typography stuff*/
+  font-size: 26px;
+  color: var(--secondary-color);
+/*Miscellaneous*/
+  line-height: 1.5;
+}
+/* WHAT YOU DO STYLES END */
+
+/* MEET THE TRAINERS START */
 .trainers {
-  /* selects all elements in the trainers class */
-  text-align: center; /* text alignment */
+/*Display stuff*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+/*Box model stuff*/
+  width: 100%;
+  margin: 0px auto;
 }
 
 .trainer {
-  /* selects all elements in the trainer class */
-  width: 900px; /* width of the trainer article container */
-  margin: 0px auto 30px auto; /* margin spacing 0px to the top and bottom and auto for the right and left*/
-  background: #024e76; /* background color */
-  color: #fce138; /* text color */
-  overflow: auto; /* overflow property specifies what happens if content overflows an element's box. */
+/*Display stuff*/
+  flex: 1;
+/*Box model stuff*/
+  margin: 20px;
+  background: var(--secondary-color);
+/*Typography stuff*/
+  color: var(--primary-color);
 }
 
 .trainer img {
-  /* selects all elements in the img tags */
-  width: 35%; /* width of the trainer image */
-  float: left; /* float left mean it will be moved to the left side of the trainer container */
+/*Box model stuff*/
+  width: 100%;
 }
 
 .trainer-bio {
-  /* selects all elements in the trainer-bio class */
-  padding: 35px; /* padding top and bottom, left and right*/
-  float: left; /* float left mean it will be moved to the left side of the trainer container */
-  width: 65%; /* width of the trainer-bio container */
+/*Box model stuff*/
+  padding: 25px;
+/*Miscellaneous*/
+  line-height: 1.3;
 }
 
 .trainer-bio h3 {
-  /* selects all elements in the h3 tags */
-  font-size: 32px; /* font size height and width*/
-  margin-bottom: 8px; /* margin spacing */
+/*Typography stuff*/
+  font-size: 28px;
 }
 
 .trainer-bio h4 {
-  /* selects all elements in the h4 tags */
-  font-weight: lighter; /* font weight */
-  font-size: 26px; /* font size height and width*/
-  margin-bottom: 25px; /* margin spacing */
+/*Box model stuff*/
+  margin-bottom: 15px;
+/*Typography stuff*/
+  font-size: 22px;
+  font-weight: lighter;
 }
 
 .trainer-bio p {
-  /* selects all elements in the p tags */
-  font-size: 17px; /* font size height and width*/
-  line-height: 1.3; /* line height */
+/*Typography stuff*/
+  font-size: 17px;
 }
+/* TRAINER STYLES END */
 
-.text-left {
-  /* selects all elements in the text-left class */
-  text-align: left; /* text alignment */
-}
-
-.text-right {
-  /* selects all elements in the text-right class */
-  text-align: right; /* text alignment */
-}
-
+/* REACH OUT STYLES START */
 .contact {
-  /* selects all elements in the contact class */
-  text-align: center; /* text alignment */
-  background: #024e76; /* background color */
+/*Box model stuff*/
+  background: var(--secondary-color);
 }
 
 .contact h2 {
-  /* selects all elements in the h2 tags */
-  color: #fce138; /* text color */
+/*Typography stuff*/
+  color: var(--primary-color);
+}
+
+.contact-info {
+/*Display stuff*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-info > * {
+/*Display stuff*/
+  flex: 1;
+/*Box model stuff*/
+  margin: 15px;
 }
 
 .contact-info iframe {
-  /* selects all elements in the iframe tags */
-  width: 400px; /* width of the iframe */
-  height: 400px; /* height of the iframe */
+/*Box model stuff*/
+  height: 400px;
 }
 
 .contact-info div {
-  /* selects all elements in the div tags */
-  width: 410px; /* width of the div */
-  display: inline-block; /* display inline-block  */
-  vertical-align: top; /* vertical alignment top lift up the container to the */
-  text-align: left; /* text alignment */
-  margin: 30px 0px 0px 60px; /* margin spacing 30px to the top and bottom and 0 for the right and left*/
-  color: white; /* text color */
+/*Typography stuff*/
+  color: white;
 }
 
 .contact-info h3 {
-  /* selects all elements in the h3 tags */
-  color: #fce138; /* text color */
-  font-size: 32px; /* font size height and width*/
+/*Typography stuff*/
+  font-size: 32px;
+  color: var(--primary-color);
 }
 
-.contact-info p,
-.contact-info address {
-  /* selects all elements in the p and address tags */
-  margin: 20px 0px; /* margin spacing 20px to the top and bottom and 0 for the right and left*/
-  line-height: 1.5; /* line height */
-  font-size: 20px; /* font size height and width*/
-  font-style: normal; /* font style */
+.contact-info p, .contact-info address {
+/*Box model stuff*/
+  margin: 20px 0;
+/*Typography stuff*/
+  font-size: 16px;
+  font-style: normal;
+/*Miscellaneous*/
+  line-height: 1.5;
+}
+
+.contact-form input, .contact-form textarea {
+/*Display stuff*/
+  display: block;
+/*Box model stuff*/
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  padding: 7px 15px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
+/*Typography stuff*/
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+/*Box model stuff*/
+  outline: none;
+  background-color: rgba(255,255,255, 1);
+}
+
+.contact-form button {
+/*Box model stuff*/
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary-color);
+/*Typography stuff*/
+  font-size: 16px;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.contact-form button:hover {
+/*Box model stuff*/
+  background: var(--tertiary-color);
+/*Typography stuff*/
+  color: var(--primary-color);
 }
 
 .contact-info a {
-  color: #fce138;
+/*Typography stuff*/
+  color: var(--primary-color);
+}
+/* REACH OUT STYLES END */
+
+/* UTILITIES */
+.text-left {
+/*Typography stuff*/
+  text-align: left;
 }
 
+.text-right {
+/*Typography stuff*/
+  text-align: right;
+}
+
+.flex-row {
+/*Display stuff*/
+  display: flex;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-cta, .hero-form {
+    width: 100%;
+  }
+
+  .hero-cta {
+    text-align: center;
+  }
+
+  .section-title {
+    width: 80%;
+  }
+
+  .trainer {
+    flex: 0 70%;
+  }
+
+  .contact-info iframe{
+    flex: 1 100%;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;
+  }
+
+  .trainer-bio h3, .trainer-bio h4 {
+    display: block;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
+  }
+}
