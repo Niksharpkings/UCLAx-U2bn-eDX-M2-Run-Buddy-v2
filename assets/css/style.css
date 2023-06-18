@@ -13,6 +13,9 @@ body {
 
 header {
   /* selects all elements in the header tags */
+  display: flex; /* flexbox for display */
+  justify-content: space-between; /* justify-content space between value distributes all empty space between child elements to keep them evenly spaced apart */
+  flex-wrap: wrap; /* flex-wrap property specifies whether the flexible items should wrap or not. By default, the value of flex-wrap is set to none.*/
   padding: 20px 35px; /* padding top and bottom, left and right*/
   background-color: #39a6b2; /* background color */
 }
@@ -23,7 +26,7 @@ header h1 {
   font-size: 36px; /* font size height and width*/
   color: #fce138;
   margin: 0; /* margin spacing */
-  display: inline; /* display inline means it will be displayed in the same line */
+  /* display: inline; display inline means it will be displayed in the same line */
 }
 
 header a {
@@ -34,20 +37,23 @@ header a {
 
 header nav {
   /* selects all elements in the nav tags */
-  float: right; /* float right mean it will be moved to the right side of the nav container */
+  /* float: right; float right mean it will be moved to the right side of the nav container */
   margin: 7px 0px; /* margin spacing 7px to the top and bottom and 0 for the right and left*/
 }
 
-header nav ul li {
-  /* selects all elements in the li tags */
-  display: inline; /* display inline means it will be displayed in the same line */
+header nav ul {
+  display: flex; /* flexbox for display */
+  flex-wrap: wrap; /* flex-wrap property specifies whether the flexible items should wrap or not. By default, the value of flex-wrap is set to none. */
+  justify-content: space-between; /* justify-content space between value distributes all empty space between child elements to keep them evenly spaced apart */
+  align-items: center; /* align-items aligns items vertically */
+  list-style: none; /* list-style none removes the list style */
 }
 
 header nav ul li a {
   /* selects all anchor tags in the li tags */
   margin: 0px 30px; /* margin spacing 0px to the top and bottom and 30px for the right and left*/
   font-weight: lighter; /* font weight thickness */
-  font-size: 22px; /* font size height and width*/
+  font-size: 1.55vw; /* font size height and width The value we provided (1.55vw) is using a unit of measurement called vw, which stands for viewport width.*/
 }
 
 footer {

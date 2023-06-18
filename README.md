@@ -1,23 +1,28 @@
 # Project Name: Run Buddy v2
+
 > - A website service that lets runners sign up for personal training.
 > - Live Website Hosted by GitHub Pages.
 
-## Project Original Creators: 
+## Project Original Creators:
+
 > - UCLA Extension
 > - U2 BootCamp Network
 > - edX Boot Camps LLC
 
 ## Project Recreated with additional notes and comments by:
+
 > - Nikita "Nik" Sharpio aka Niksharpkings
+
 ---
+
 ## Module 1: HTML, CSS, and Git
+
 ---
 
 ###### Development For:
 
 UCLA Extension's & U2 Network Boot Camp's
 Full-Stack Web Development Coding Boot Camp 2021-2022
-
 
 ### Project Description:
 
@@ -28,13 +33,12 @@ Full-Stack Web Development Coding Boot Camp 2021-2022
 - A website service that lets runners sign up for personal training.
 - Create a landing page is to attact more sign-ups as a new hired Full-Stack Developer that will hand off this site to internal developers to complete the data collection.
 - Set up a basic structured semantic HTML & CSS document.
-
 - The Run Buddy website is a huge success so far!
 - With the landing page bringing in more business, the company now has the capital and incentive to upgrade the site.
 - So this week we'll focus on building Run Buddy 2.0, which will make the site mobile-friendly and easier to use.
 - In doing so, we'll intergrade more depth powerful layout capabilities of CSS, including media queries and flexbox.
-
 - Building a foundational knowledge of HTML, CSS, and Git involves a steep learning curve. Learning a myriad of concepts and complex, intertwined tools all at once.
+
 ---
 
 ### GitHub Information:
@@ -65,9 +69,12 @@ Full-Stack Web Development Coding Boot Camp 2021-2022
 
 ##### Version:
 
+`v2.0.1 - | Section 2.1 Complete | Updated Class-Notes |`
+
 `v2.0.0 - | Repo Created | Added Files: index.html, README.md, LICENSE, .gitignore and all Files from Run Buddy V1 |`
 
 ---
+
 #### ScreenShot of Deployed Website:
 
 ###### Home page - index.html ScreenShot:
