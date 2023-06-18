@@ -81,11 +81,11 @@ Full-Stack Web Development Coding Boot Camp 2021-2022
 
 ###### Home page - index.html ScreenShot:
 
-![index.html](image/README/uclax-u2-m1-runbuddy-index-html-127-0-0-1-5500-2023-02-11-07_09_55.png)
+![index.html](image/README/uclax-u2-edx-m2-runbuddy-v2-index-html.png)
 
 ###### Privacy & Policy page - privacy-policy.html ScreenShot:
 
-![privacy=policy.html](image/README/uclax-u2-m1-runbuddy-privacy-policy-html-2023-02-11-07_11_30.png)
+![privacy=policy.html](image/README/uclax-u2-edx-m2-runbuddy-v2-privacy-policy-html.png)
 
 ---
 
