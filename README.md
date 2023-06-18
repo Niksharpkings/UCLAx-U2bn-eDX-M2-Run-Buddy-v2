@@ -45,11 +45,11 @@ Full-Stack Web Development Coding Boot Camp 2021-2022
 
 #### Live Deployed Website Link:
 
-[Hosted by GitHub Pages- https://niksharpkings.github.io/UCLAxU2-M1-Run-Buddy/](https://niksharpkings.github.io/UCLAxU2-M1-Run-Buddy/)
+[Hosted by GitHub Pages - https://niksharpkings.github.io/UCLAx-U2bn-eDX-M2-Run-Buddy-v2/](https://niksharpkings.github.io/UCLAx-U2bn-eDX-M2-Run-Buddy-v2/)
 
 #### GitHub Repository Link:
 
-[GitHub Repo - https://github.com/Niksharpkings/UCLAxU2-M1-Run-Buddy](https://github.com/Niksharpkings/UCLAxU2-M1-Run-Buddy)
+[GitHub Repo - https://github.com/Niksharpkings/UCLAx-U2bn-eDX-M2-Run-Buddy-v2/](https://github.com/Niksharpkings/UCLAx-U2bn-eDX-M2-Run-Buddy-v2/)
 
 ---
 
